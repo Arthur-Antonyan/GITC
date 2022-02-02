@@ -1,0 +1,428 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Open+Sans:ital,wght@1,300&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  height: 1000px;
+}
+header {
+  width: 100%;
+  height: 600px;
+  position: relative;
+  background-image: url('https://d2rdrr51ez8te0.cloudfront.net/hero-posters/fields.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%, auto;
+}
+
+header > a > img {
+  float: left;
+  margin-right: 15rem;
+  width: 60px;
+  height: 60px;
+  margin-left: 50px;
+  margin-top: -5px;
+  margin-right: 0;
+  transition: all 1s ease-in-out;
+}
+header > a {
+  text-decoration: none;
+  color: white;
+  font-size: 40px;
+  display: block;
+  position: absolute;
+  margin-top: 30px;
+  transition: all 0.3s ease-in-out;
+}
+header > a:hover img {
+  opacity: 0.8;
+}
+header > a:hover {
+  opacity: 0.6;
+}
+header > ul {
+  color: white;
+  float: right;
+  list-style-type: none;
+}
+header > ul > li {
+  float: left;
+  margin: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 20px;
+}
+header > ul :hover {
+  opacity: 0.6;
+}
+
+.text {
+  position: absolute;
+  top: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+.text span {
+  color: White;
+}
+.text span:nth-child(1) {
+  opacity: 0.5;
+  font-size: 2em;
+}
+.text span:nth-child(3) {
+  font-size: 3em;
+  letter-spacing: 1rem;
+  opacity: 0.7;
+}
+.text hr {
+  color: white;
+  width: 50%;
+}
+.start {
+  width: 100%;
+  position: absolute;
+  top: 65%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 1s ease-in-out;
+}
+.start button {
+  border: none;
+  background-color: #e78970;
+  color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px 5px rgba(231, 137, 112, 0.5);
+  max-width: 24%;
+  height: 100%;
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+.start button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.start p {
+  color: white;
+}
+
+.slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  width: 100%;
+  height: 700px;
+  background-color: rgba(126, 126, 126, 0.1);
+}
+.slider > div {
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  text-align: center;
+  font-size: 2em;
+}
+.slider img {
+  height: 80%;
+  width: 80%;
+}
+.description > span {
+  display: block;
+  width: 40%;
+  margin: 15px;
+  color: #6a6a6a;
+}
+.description > button {
+  border: none;
+  background-color: #e78970;
+  color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px 5px rgba(231, 137, 112, 0.5);
+  max-width: 80%;
+  width: 30%;
+  height: 5%;
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+.description > button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.carouselle > div {
+  /* display: flex;
+  flex-direction: row !important; */
+  max-height: 80%;
+  max-width: 80%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main ul {
+  list-style-type: none;
+  width: 50%;
+  display: block;
+}
+
+main ul li::before {
+  content: url('img/check.png');
+  height: 10px;
+  left: -50px;
+  position: relative;
+  top: 20px;
+  width: 40px;
+}
+strong {
+  margin-left: -35px;
+}
+
+main ul li {
+  text-align: left;
+  line-height: 1.7em;
+  font-size: 80%;
+}
+
+main span {
+  margin-top: 50px;
+  text-align: center;
+  font-size: xx-large;
+}
+.registries {
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.links img {
+  width: 100%;
+  height: 50%;
+  transition: all 0.5s ease-in-out;
+}
+.links {
+  margin-top: 100px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 15px;
+}
+.links img:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.someText {
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  line-height: 2.5em;
+  color: #666;
+}
+.logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 100px;
+  margin-top: 50px;
+}
+.logos img {
+  width: 170px;
+  height: 60px;
+}
+.gettingStarted {
+  display: grid;
+  grid-template-columns: 25% 25% 25%;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  height: 300px;
+  background-color: #f9f8f7;
+}
+.gettingStarted > div {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.gettingStarted p {
+  line-height: 2.5em;
+}
+.h1 {
+  grid-column: 1 / span 3;
+  text-align: center;
+}
+
+.video {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+}
+
+.celebrate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  width: 100%;
+  height: 300px;
+  background-color: #f9f8f7;
+}
+.celebrate button {
+  border: none;
+  background-color: #e78970;
+  color: white;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px 5px rgba(231, 137, 112, 0.5);
+  width: 25%;
+  max-width: 30%;
+  height: 20%;
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+.celebrate button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+.celebrate h1 {
+  letter-spacing: 3px;
+  font-size: 50px;
+}
+.container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.logo-invisible {
+  display: none;
+}
+.logo-visible {
+  display: block;
+}
+.container a:hover .logo-invisible {
+  display: block;
+}
+
+.container a:hover .logo-visible {
+  display: none;
+}
+
+.preFooter {
+  margin-top: 50px;
+  width: 100%;
+  height: 250px;
+  background-color: #f9f8f7;
+  text-transform: uppercase;
+  font-size: xx-large;
+  color: rgb(95, 93, 93, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 2em;
+  letter-spacing: 0.1em;
+}
+.preFooter p {
+  width: 80%;
+  height: 80%;
+  text-align: center;
+  vertical-align: middle;
+}
+footer {
+  width: 92.5%;
+  height: 150px;
+  background-color: black;
+  padding: 50px;
+}
+
+footer a {
+  float: left;
+  margin-left: 20px;
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  width: fit-content;
+  height: 25px;
+  padding: 0;
+}
+footer img {
+  float: left;
+  transition: all 0.3s ease-in-out;
+}
+footer img:hover,
+footer a:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.right label {
+  color: white;
+  cursor: pointer;
+}
+.right {
+  float: right;
+  display: flex;
+  padding: 5px;
+}
+.email {
+  padding: 5px;
+  order: -1;
+  margin-top: 50px;
+  margin-right: -334px;
+}
+.email input {
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: black;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+}
+input:focus {
+  background-color: black;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid white;
+}
+.email ::after {
+  content: '\27A3';
+  color: #e78970;
+  font-size: 25px;
+  float: right;
+  margin-right: -25px;
+}
+.email ::after:hover {
+  opacity: 0.5;
+}
